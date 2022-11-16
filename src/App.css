@@ -46,3 +46,21 @@ body {
   width: 24rem;
   margin: 1.6rem 0;
 }
+
+.card {
+  display: grid;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  font-size: .75rem;
+}
+
+.card-img {
+  width: 11rem;
+  height: 14.6rem;
+  margin-bottom: .563rem;
+}
+
+.card-star {
+  width: .875rem;
+  height: .875rem;
+}
