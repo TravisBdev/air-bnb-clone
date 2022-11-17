@@ -1,18 +1,14 @@
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img
-        className="card-img"
-        src="src\assets\swimmer.png"
-        alt="olympic swimmer smiling"
-      />
+      <img className="card-img" src={props.img} alt="olympic swimmer smiling" />
       <span>
         <img className="card-star" src="src\assets\star.png" alt="red star" />
-        5.0 (6) • USA
+        {props.rating.toFixed(1)} ({props.reviewCount}) • {props.country}
       </span>
-      <p>Life lessons with Katie Zaferes</p>
+      <p>{props.title}</p>
       <p>
-        <strong>From $136</strong> / person
+        <strong>${props.price}</strong> / person
       </p>
     </div>
   );
